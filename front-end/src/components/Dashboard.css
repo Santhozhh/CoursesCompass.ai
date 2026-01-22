@@ -1,0 +1,144 @@
+.dashboard-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.dashboard-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 20px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+  font-size: 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-info span {
+  color: #333;
+  font-weight: 500;
+}
+
+.logout-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.logout-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.dashboard-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.welcome-card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.welcome-card h2 {
+  font-size: 2rem;
+  color: #333;
+  margin: 0 0 10px 0;
+}
+
+.welcome-card > p {
+  font-size: 1.1rem;
+  color: #666;
+  margin: 0 0 30px 0;
+}
+
+.user-details {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 20px;
+  text-align: left;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.user-details p {
+  margin: 12px 0;
+  color: #333;
+  font-size: 1rem;
+}
+
+.user-details strong {
+  color: #667eea;
+}
+
+@media (prefers-color-scheme: dark) {
+  .dashboard-header {
+    background: #1a1a1a;
+  }
+
+  .user-info span {
+    color: #e0e0e0;
+  }
+
+  .welcome-card {
+    background: #1a1a1a;
+  }
+
+  .welcome-card h2 {
+    color: #e0e0e0;
+  }
+
+  .welcome-card > p {
+    color: #aaa;
+  }
+
+  .user-details {
+    background: #2a2a2a;
+  }
+
+  .user-details p {
+    color: #e0e0e0;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .user-info {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
